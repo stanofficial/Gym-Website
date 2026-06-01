@@ -6,6 +6,10 @@
 -->
 <html>
 	<head>
+		<!-- Google Fonts Import -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 		<title>Ultra Gym Website</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -22,7 +26,7 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li>
-								<a href="#">Layouts</a>
+								<a href="#">memberhip</a>
 								<ul>
 									<li><a href="left-sidebar.html">Left Sidebar</a></li>
 									<li><a href="right-sidebar.html">Right Sidebar</a></li>
@@ -38,8 +42,8 @@
 									</li>
 								</ul>
 							</li>
-							<li><a href="elements.html">Elements</a></li>
-							<li><a href="#" class="button primary">Sign Up</a></li>
+							<li><a href="elements.html">Boxing matches</a></li>
+							<li><a href="#" class="button primary">Join Now!</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -48,14 +52,33 @@
 				<section id="banner">
 					<div class="content">
 						<header>
-							<h2>You only get one body.</h2>
-							<p>Build it to last.Break boundaries at Ultra Gym.</p>
-							
+							<h2><span class="hero-animate-title">FORGE YOUR ULTIMATE SELF.</span></h2>
+						<P><span class="hero-animate-sub">Rewrite your limits.Build a body to last.</span></P>
 						</header>
 						
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
+				<script>
+  function setupLetterAnimation(className) {
+    const element = document.querySelector('.' + className);
+    if (!element) return;
+    
+    const text = element.innerText;
+    element.innerHTML = '';
+    
+    [...text].forEach((char, index) => {
+      const span = document.createElement('span');
+      span.innerHTML = char === ' ' ? '&nbsp;' : char;
+      span.style.setProperty('--letter-index', index);
+      element.appendChild(span);
+    });
+  }
+
+  // This strictly targets only your hero banner elements
+  setupLetterAnimation('hero-animate-title');
+  setupLetterAnimation('hero-animate-sub');
+</script>
 
 			<!-- One -->
 				<section id="one" class="spotlight style1 bottom">
