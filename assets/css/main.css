@@ -3083,7 +3083,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 			transition: transform 1s ease, opacity 1s ease;
-			background: rgba(23, 24, 32, 0.95);
+			background: rgba(10, 15, 30, 0.4);
 			border-style: solid;
 			opacity: 1;
 			position: absolute;
@@ -3452,7 +3452,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: fixed;
 		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../images/banner.png.png");
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3471,10 +3471,10 @@ input, select, textarea {
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -moz-linear-gradient(top, rgba(10, 15, 30, 0.4), rgba(10, 15, 30, 0.6)), url("images/banner.png.png");;
+			background-image: -webkit-linear-gradient(top, rgba(10, 15, 30, 0.4), rgba(10, 15, 30, 0.6)), url("images/banner.png.[ng]");;
+			background-image: -ms-linear-gradient(top, rgba(10, 15, 30, 0.4), rgba(10, 15, 30, 0.6)), url("images/banner.png.png");;
+			background-image: linear-gradient(top, rgba(10, 15, 30, 0.4), rgba(10, 15, 30, 0.6)), url("images/banner.png.png");;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3501,13 +3501,23 @@ input, select, textarea {
 			}
 
 				#banner .content header h2 {
-					font-size: 2.5em;
+					font-size: 3rem;
+					font-weight: 800;
+					color: #ffffff;
+					text-transform: uppercase;
+					letter-spacing: 1px;
 					margin: 0;
+
 				}
 
 				#banner .content header p {
-					margin: 0.5em 0 0 0;
-					top: 0;
+					font-size: 1.3rem;
+					font-weight: 400;
+					color:#e0e6ed;
+					margin: 0.8em 0 0 0;
+					line-height: 1.5;
+
+					
 				}
 
 			#banner .content .image {
