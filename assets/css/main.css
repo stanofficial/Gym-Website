@@ -4164,6 +4164,7 @@ input, select, textarea {
 
 /* --- Targeted Letter Animations --- */
 .hero-animate-title span {
+	
   display: inline-block;
   opacity: 0;
   animation: letterAssemble 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
@@ -4179,6 +4180,17 @@ input, select, textarea {
 
 /* --- Mobile Breakpoint --- */
 @media screen and (max-width: 736px) {
-  #banner .content header h2 { font-size: 2.2rem !important; }
-  #banner .content header p { font-size: 1.1rem !important; padding: 0 10px; }
+  #banner .content header h2
+  font-size: clamp(1.6rem, 7vw 2.4rem) !important;
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+  hyphens: none !important;
+}
+
+  #banner .content header p{
+	font-size: 1.1rem !important;
+	padding:0 10px;
+	text-align:center !important;
+	word-spacing: normal !important;
+
 }
