@@ -4143,6 +4143,9 @@ input, select, textarea {
   color: #ff5a36 !important;
   text-transform: uppercase;
   margin-bottom: 1.5rem !important;
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+  hyphens: none !important;
 }
 
 #banner .content header p {
@@ -4155,6 +4158,8 @@ input, select, textarea {
   max-width: 650px;
   margin: 0 auto !important;
   text-shadow:0px 2px 4px rgba(0, 0, 0, 0.8) !important;
+  text-align: center !important;
+  word-spacing: normal !important;
 }
 
 /* --- Targeted Letter Animations --- */
