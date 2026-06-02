@@ -4194,9 +4194,25 @@ input, select, textarea {
         word-spacing: normal !important;
     }
 
-    /* This forces the specific animation spans to lock up together on mobile */
+   /* Keeps the individual animated letters from breaking apart */
     .hero-animate-title span, .hero-animate-sub span {
         display: inline-block !important;
-        white-space: nowrap !important;
+    }
+
+    /* Allows the heading words to wrap beautifully onto 2 or 3 lines */
+    #banner .content header h2 {
+        display: block !important;
+        white-space: normal !important;
+        font-size: clamp(1.6rem, 6.5vw, 2rem) !important;
+        line-height: 1.3 !important;
+    }
+
+    /* Ensures the paragraph stays centered and fully contained on mobile */
+    #banner .content header p {
+        display: block !important;
+        white-space: normal !important;
+        font-size: 0.95rem !important;
+        line-height: 1.4 !important;
+        padding: 0 15px !important;
     }
 }
