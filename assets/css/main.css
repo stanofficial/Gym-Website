@@ -4194,3 +4194,7 @@ input, select, textarea {
 	word-spacing: normal !important;
 
 }
+#banner h2 span,#banner p span{
+	display: inline-block;
+	white-space :nowrap;
+}
