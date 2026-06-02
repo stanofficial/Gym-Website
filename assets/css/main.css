@@ -4180,21 +4180,23 @@ input, select, textarea {
 
 /* --- Mobile Breakpoint --- */
 @media screen and (max-width: 736px) {
-  #banner .content header h2
-  font-size: clamp(1.6rem, 7vw 2.4rem) !important;
-  word-break: keep-all !important;
-  overflow-wrap: break-word !important;
-  hyphens: none !important;
-}
+  #banner .content header h2 {
+        font-size: clamp(1.5rem, 8vw, 2.2rem) !important;
+        word-break: keep-all !important;
+        overflow-wrap: break-word !important;
+        hyphens: none !important;
+    }
 
-  #banner .content header p{
-	font-size: 1.1rem !important;
-	padding:0 10px;
-	text-align:center !important;
-	word-spacing: normal !important;
+    #banner .content header p {
+        font-size: 1.1rem !important;
+        padding: 0 10px;
+        text-align: center !important;
+        word-spacing: normal !important;
+    }
 
-}
-#banner h2 span,#banner p span{
-	display: inline-block;
-	white-space :nowrap;
+    /* This forces the specific animation spans to lock up together on mobile */
+    .hero-animate-title span, .hero-animate-sub span {
+        display: inline-block !important;
+        white-space: nowrap !important;
+    }
 }
